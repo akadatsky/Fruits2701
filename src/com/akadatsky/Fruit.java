@@ -23,18 +23,22 @@ public class Fruit {
     }
 
     public FruitType getType() {
+
         return type;
     }
 
     public Color getColor() {
+
         return color;
     }
 
     public double getPricePerKg() {
+
         return pricePerKg;
     }
 
     public int getWeight() {
+
         return weight;
     }
 }
