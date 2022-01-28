@@ -6,16 +6,16 @@ public class Fruit {
         APPLE, LEMON, BANANA
     }
 
-    public enum Color {
+    public enum FruitColor {
         RED, YELLOW, GREEN
     }
 
     private FruitType type;
-    private Color color;
+    private FruitColor color;
     private double pricePerKg;
     private int weight;
 
-    public Fruit(FruitType type, Color color, double pricePerKg, int weight) {
+    public Fruit(FruitType type, FruitColor color, double pricePerKg, int weight) {
         this.type = type;
         this.color = color;
         this.pricePerKg = pricePerKg;
@@ -26,7 +26,7 @@ public class Fruit {
         return type;
     }
 
-    public Color getColor() {
+    public FruitColor getColor() {
         return color;
     }
 
