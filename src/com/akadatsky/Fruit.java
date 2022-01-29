@@ -3,7 +3,7 @@ package com.akadatsky;
 public class Fruit {
 
     public enum FruitType {
-        APPLE, LEMON, BANANA
+        APPLE, LEMON, BANANA,
     }
 
     public enum Color {
