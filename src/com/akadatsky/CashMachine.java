@@ -14,10 +14,13 @@ public class CashMachine {
     public void printBill() {
         double sum = 0;
         for (Fruit fruit : fruits) {
-            sum += fruit.getWeight() * fruit.getPricePerKg() / 1000.0;
+            double price = fruit.getWeight() * fruit.getPricePerKg() / 1000.0;
+            double scale = Math.pow(10, 2);
+            double roundedPrice = Math.round(price * scale) / scale;
+            sum += roundedPrice;
         }
-        String result = String.format("%.2f", sum);
-        System.out.println("Total price: " + result);
+
+        System.out.println("Total price: " + sum);
     }
 
 }
