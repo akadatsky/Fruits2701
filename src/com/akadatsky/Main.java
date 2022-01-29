@@ -15,7 +15,7 @@ public class Main {
     public static void main(String[] args) {
 
         Fruit lemon = new Fruit(Fruit.FruitType.LEMON, Fruit.FruitColor.YELLOW, 24.90, 198);
-        Fruit banana = new Fruit(Fruit.FruitType.BANANA, Fruit.FruitColor.YELLOW, 31.30, 190);
+        Fruit banana = new Fruit(Fruit.FruitType.BANANA, Fruit.FruitColor.YELLOW, 31.30, 198);
         Fruit redApple = new Fruit(Fruit.FruitType.APPLE, Fruit.FruitColor.RED, 14.90, 228);
         Fruit greenApple = new Fruit(Fruit.FruitType.APPLE, Fruit.FruitColor.GREEN, 23.90, 232);
 
