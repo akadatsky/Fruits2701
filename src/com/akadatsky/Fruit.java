@@ -1,4 +1,4 @@
-package com.galinachitakV.Fruits2701.src.com.akadatsky;
+package com.akadatsky;
 
 public class Fruit {
 
