@@ -1,4 +1,4 @@
-package com.galinachitakV.Fruits2701.src.com.akadatsky;
+package com.akadatsky;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -58,11 +58,11 @@ public class Main {
     }
 
     public static void quickSort(int[] array, int left, int right) {
-        if (array.length == 0)
-            return;
+        if (array.length == 0){
+            return;}
 
-        if (left >= right)
-            return;
+        if (left >= right){
+            return;}
 
         int middle = left + (right - left) / 2;
         int count = array[middle];
@@ -86,11 +86,13 @@ public class Main {
             }
         }
 
-        if (left < j)
+        if (left < j){
             quickSort(array, left, j);
+        }
 
-        if (right > i)
+        if (right > i){
             quickSort(array, i, right);
+        }
     }
 
 }
