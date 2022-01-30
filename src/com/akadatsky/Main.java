@@ -4,6 +4,15 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class Main {
+    /*1) Завершить задачу с фруктами что мы начали в классе ( https://github.com/akadatsky/Fruits2701 ):
+    добавить все 4 фрукт
+    округлить до сотых стоимость каждого фрукта (в методе printBill())
+    2*)
+   сделать форк репозитория https://github.com/akadatsky/Fruits270
+   клонировать его себе из вашего форка
+   завершить (задаче 1)
+   сделать git push в свой форк
+   послать pull реквест к моему оригинальному репозиторию*/
 
     /*
         Lemon: 24.90, 198г
