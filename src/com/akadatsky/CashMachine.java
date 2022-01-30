@@ -1,4 +1,4 @@
-package com.akadatsky;
+package com.galinachitakV.Fruits2701.src.com.akadatsky;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +16,7 @@ public class CashMachine {
         for (Fruit fruit : fruits) {
             sum += fruit.getWeight() * fruit.getPricePerKg() / 1000.0;
         }
-        System.out.println("Total: " + sum);
+        System.out.printf("%.2f %n", sum );
     }
 
 }
