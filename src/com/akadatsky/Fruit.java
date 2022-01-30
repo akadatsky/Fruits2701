@@ -22,6 +22,7 @@ public class Fruit {
         this.weight = weight;
     }
 
+
     public FruitType getType() {
         return type;
     }
