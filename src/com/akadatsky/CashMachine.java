@@ -1,4 +1,4 @@
-package com.galinachitakV.Fruits2701.src.com.akadatsky;
+package com.akadatsky;
 
 import java.util.ArrayList;
 import java.util.List;
