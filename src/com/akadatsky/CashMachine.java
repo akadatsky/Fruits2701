@@ -20,5 +20,4 @@ public class CashMachine {
         }
         System.out.println("Total: " + df.format(sum));
     }
-
 }

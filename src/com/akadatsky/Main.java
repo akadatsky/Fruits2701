@@ -20,6 +20,5 @@ public class Main {
         cashRegister.add(lemon);
         cashRegister.add(banana);
         cashRegister.printBill();
-
     }
 }
