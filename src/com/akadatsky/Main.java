@@ -1,9 +1,13 @@
 package com.akadatsky;
 
+import java.util.Arrays;
+import java.util.Random;
+
 public class Main {
 
     public static void main(String[] args) {
         fruitsShop();
+        showSortedArray();
     }
 
     private static void fruitsShop() {
@@ -30,5 +34,16 @@ public class Main {
         cashMachine.add(redApple);
         cashMachine.add(greenApple);
         cashMachine.printBill();
+    }
+
+    private static int[] createArray() {
+        return new Random().ints(20, 0, 100).toArray();
+    }
+
+    private static void showSortedArray() {
+        int[] array = createArray();
+        System.out.println("Исходный массив:        " + Arrays.toString(array));
+        Utils.quickSort(array);
+        System.out.println("Отсортированный массив: " + Arrays.toString(array));
     }
 }
