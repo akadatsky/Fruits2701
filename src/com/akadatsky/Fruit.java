@@ -6,19 +6,13 @@ public class Fruit {
         APPLE, LEMON, BANANA
     }
 
-    public enum Color {
-        RED, YELLOW, GREEN
-    }
-
     private FruitType type;
-    private Color color;
-    private double pricePerKg;
+    private double price;
     private int weight;
 
-    public Fruit(FruitType type, Color color, double pricePerKg, int weight) {
+    public Fruit(FruitType type, double price, int weight) {
         this.type = type;
-        this.color = color;
-        this.pricePerKg = pricePerKg;
+        this.price = price;
         this.weight = weight;
     }
 
@@ -26,15 +20,21 @@ public class Fruit {
         return type;
     }
 
-    public Color getColor() {
-        return color;
-    }
-
     public double getPricePerKg() {
-        return pricePerKg;
+        return price;
     }
 
     public int getWeight() {
         return weight;
+    }
+
+    @Override
+    public String toString() {
+        double cost = weight * price / 1000 * 100;
+        cost = (int) cost;
+        return "\n" + price + " x " +
+                weight + "\n" +
+                type + ": " +
+                cost / 100 + " грн.";
     }
 }
